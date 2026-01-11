@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Quiz - Educational Cybersecurity Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Author: Jonathan Peters -->
+    <!-- Year: 2026 -->
+    <!-- Notification: This Tool Is Only For Educational Purposes -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Phishing Quiz</h1>
+            <p class="disclaimer">This tool is only for educational purposes. It is designed to help users learn about phishing signs in a safe, simulated environment. Do not use this for any malicious activities. &copy; 2026 Jonathan Peters</p>
+        </header>
+        
+        <div id="start-screen">
+            <p>Welcome to the Phishing Quiz! This interactive quiz will present you with fake emails and URLs. Your task is to identify signs of phishing. There are 5 questions in total. For each question, select whether it's a phishing attempt or not, and optionally select suspicious elements.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        
+        <div id="quiz-screen" class="hidden">
+            <div id="question-container">
+                <h2 id="question-title"></h2>
+                <div id="question-content"></div>
+                <div id="options"></div>
+                <button id="submit-btn" disabled>Submit Answer</button>
+            </div>
+            <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions">5</span></div>
+        </div>
+        
+        <div id="result-screen" class="hidden">
+            <h2>Quiz Results</h2>
+            <p>Your score: <span id="score"></span> out of <span id="total-questions-result">5</span></p>
+            <div id="explanations"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
